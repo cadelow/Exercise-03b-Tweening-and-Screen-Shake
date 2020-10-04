@@ -26,9 +26,7 @@ func update_color():
 
 func screen_shake(amount):
 	if HUD.screen_shake > 0:
-		pass
-
-
+		camera.add_trauma(amount*HUD.screen_shake)
 
 func _on_HUD_changed():
 	update_color()
